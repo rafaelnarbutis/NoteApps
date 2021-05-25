@@ -1,0 +1,48 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="Geral">
+        <com.jaredrummler.android.colorpicker.ColorPreferenceCompat
+            android:defaultValue="@color/noteDefaultColor"
+            android:key="noteColor"
+            android:summary="Pick a color"
+            android:title="Note color">
+
+        </com.jaredrummler.android.colorpicker.ColorPreferenceCompat>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Textos">
+
+    </PreferenceCategory>
+    <EditTextPreference
+        android:defaultValue="20"
+        android:key="title_size"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="Tamanho do titulo"
+        />
+    <com.jaredrummler.android.colorpicker.ColorPreferenceCompat
+        android:id="@+id/colorTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:defaultValue="true"
+        android:key="title_color"
+        android:title="Cor do titulo">
+
+    </com.jaredrummler.android.colorpicker.ColorPreferenceCompat>
+    <EditTextPreference
+        android:defaultValue="40"
+        android:key="description_size"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="Tamanho da descrição" />
+    <com.jaredrummler.android.colorpicker.ColorPreferenceCompat
+        android:id="@+id/colorDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:defaultValue="true"
+        android:key="description_color"
+        android:title="Cor da descrição">
+
+    </com.jaredrummler.android.colorpicker.ColorPreferenceCompat>
+
+</PreferenceScreen>
